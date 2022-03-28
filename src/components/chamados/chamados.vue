@@ -11,7 +11,7 @@
                     <th>Aberto em</th>
                 </tr>
                 <tr v-for="chamado in chamados" :key="chamado.id">
-                    <td>{{chamado.id}}</td>
+                    <td >{{chamado.id}}</td>
                     <td>{{chamado.descricao}}</td>
                     <td>{{chamado.dataCriacao}}</td>
                 </tr>
@@ -72,7 +72,6 @@ export default {
 
     .tabelaChamados table td{
         font-family: Arial;
-        background-color: ;
         letter-spacing: 3px;
         padding-left: 10px;
         padding-top: 7px;

@@ -1,8 +1,8 @@
 <template>
     <div id="Menu" class="menu">
         <ul>
-            <li><a href="">Chamados</a></li>
-            <li>Técnicos</li>
+            <li><a href="#/Chamados">Chamados</a></li>
+            <li><a href="#/Tecnicos">Técnicos</a></li>
         </ul>
     </div>
 </template>
