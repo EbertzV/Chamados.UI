@@ -1,7 +1,7 @@
 <template>
     <div id="Cabecalho" class="cabecalho">
-            <h1 class="titulo">v-tech</h1>
-            <h1 class="slogan">Painel de chamados</h1>
+         <h1 class="slogan">Painel de chamados</h1>
+         <h1 class="titulo">v-tech</h1>
     </div>
 </template>
 
@@ -13,23 +13,23 @@ export default {
 <style scoped>
     h1{
         letter-spacing: 7px;
-        color: #0C0032;
+        color: white;
         font-family: "Aldrich";
     }
 
     .cabecalho{
         position: fixed 0px 0px auto auto;
-        background-color: #3500D3;
+        background-color: black;
         padding: 1% 1% 1% 1%;
         overflow:auto;
     }
 
     .titulo{
-        float: left;
+        float: right;
         text-transform: uppercase;
     }
 
     .slogan{
-        float: right;
+        float: left;
     }
 </style>

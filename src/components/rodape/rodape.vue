@@ -15,8 +15,7 @@ export default {
         bottom: 0px;
         right: 0px;
         left: 0px;
-        background-color: #3500D3;
-        opacity: 65%;
+        background-color: black;
         padding: 2%;
     }
 
@@ -24,7 +23,7 @@ export default {
         font-family: "Arial";
         display: inline;
         margin-right: 5%;
-        color: #282828;
+        color: white;
         opacity: unset;
         text-decoration: solid;
     }
