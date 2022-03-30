@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <TelaInicial/>
   </div>
 </template>
-
+<script>
+import TelaInicial from './components/tela_inicial/tela_inicial.vue'
+export default {
+  name: 'App',
+  components: {
+    TelaInicial
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
