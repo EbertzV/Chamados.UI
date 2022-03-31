@@ -8,6 +8,16 @@ const recuperarChamados = async function(){
     return chamados;
 }
 
+const recuperarTecnicos = async function(){
+    const response = await axios.get('http://localhost:5000/api/Tecnicos');
+    console.log(response.data);
+    const tecnicos = response.data.tecnicos.map(t => {
+        return t;
+    });
+    return tecnicos;
+}
+
 export const data = {
-    recuperarChamados
+    recuperarChamados,
+    recuperarTecnicos
 }
