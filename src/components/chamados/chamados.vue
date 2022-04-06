@@ -11,9 +11,9 @@
                     <th>Aberto em</th>
                 </tr>
                 <tr v-for="chamado in chamados" :key="chamado.id">
-                    <td >{{chamado.id}}</td>
-                    <td>{{chamado.descricao}}</td>
-                    <td>{{chamado.dataCriacao}}</td>
+                    <td><router-link to="/detalhes-chamado">{{chamado.id}}</router-link></td>
+                    <td><router-link to="/detalhes-chamado">{{chamado.descricao}}</router-link></td>
+                    <td><router-link to="/detalhes-chamado">{{chamado.dataCriacao}}</router-link></td>
                 </tr>
             </table>
         </div>
@@ -60,7 +60,7 @@ export default {
     }
 
     .tabelaChamados table th{
-        text-align: left;
+        text-align: center;
         font-family: "Aldrich";
         background-color: black;
         color: white;
@@ -71,12 +71,31 @@ export default {
     }
 
     .tabelaChamados table td{
+        text-align: center;
         font-family: Arial;
         letter-spacing: 3px;
-        padding-left: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-top: 7px;
         padding-bottom: 7px;
         text-decoration: solid;
+        width: fit-content;
+    }
+
+    .tabelaChamados table :active {
+        color: black;
+    }
+
+    .tabelaChamados table :visited{
+        color: black;
+    }
+
+    .tabelaChamados table tr:hover{
+        background-color: grey;
+    }
+
+    .tabelaChamados table tr td:first-of-type{
+        font-weight: bold;
     }
 
     h3{
