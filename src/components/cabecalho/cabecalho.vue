@@ -21,7 +21,7 @@ export default {
         position: fixed 0px 0px auto auto;
         background-color: black;
         padding: 1% 1% 1% 1%;
-        overflow:auto;
+        overflow:hidden;
     }
 
     .titulo{

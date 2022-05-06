@@ -27,6 +27,12 @@ export default {
 
     .conteudo-interno{
         display: flex;
+        width: 100%;
+        flex-grow: 1;
         height: 100%;
+    }
+
+    .view{
+        width: 100%;
     }
 </style>
