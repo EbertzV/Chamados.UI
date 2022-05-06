@@ -3,7 +3,6 @@
         <ul>
             <li><router-link to="/Chamados">CHAMADOS</router-link></li>
             <li><router-link to="/Tecnicos">TÉCNICOS</router-link></li>
-            <i class="fa-solid fa-archway"></i>
         </ul>
     </div>
 </template>
@@ -14,24 +13,20 @@ export default {
 }
 </script>
 <style scoped>
-    .menu{
-        float: left;
+    .menu{        
         background-color: #240090;
         color: white;
         text-decoration: none;
-        padding: 0px;
-        width: 100%;
-        margin-bottom: 20px;
     }
 
     ul{
         list-style-type: none;
         margin-right: 0px;
-        padding-left: 0px;
+        padding-left: 0px; 
+        width: fit-content;       
     }
 
     ul li{
-        display: inline;
         padding: 16px;
         letter-spacing: 3px;
         font-family: "Aldrich";

@@ -1,0 +1,45 @@
+.tabela{
+    display: grid;
+    border: solid;
+    border-radius: 10px;
+    margin-right: 80px;
+}
+
+.tabela table th{
+    text-align: center;
+    font-family: "Aldrich";
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tabela table td{
+    text-align: center;
+    font-family: Arial;
+    letter-spacing: 3px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-decoration: solid;
+    width: fit-content;
+}
+
+.tabela table :active {
+    color: black;
+}
+
+.tabela table :visited{
+    color: black;
+}
+
+.tabela table tr:hover{
+    background-color: grey;
+}
+
+.tabela table tr td:first-of-type{
+    font-weight: bold;
+}

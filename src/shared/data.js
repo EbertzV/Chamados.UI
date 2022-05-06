@@ -10,14 +10,19 @@ const recuperarChamados = async function(){
 
 const recuperarTecnicos = async function(){
     const response = await axios.get('http://localhost:5000/api/Tecnicos');
-    console.log(response.data);
     const tecnicos = response.data.tecnicos.map(t => {
         return t;
     });
     return tecnicos;
 }
 
+const recuperarChamado = async function(id){
+    const response = await axios.get('http://localhost:5000/api/Chamados/' + id + '/Detalhes');
+    return response.data;
+}
+
 export const data = {
     recuperarChamados,
-    recuperarTecnicos
+    recuperarTecnicos,
+    recuperarChamado
 }

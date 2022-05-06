@@ -11,10 +11,6 @@ export default {
 </script>
 <style scoped>
     .rodape{
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
         background-color: black;
         padding: 2%;
     }
