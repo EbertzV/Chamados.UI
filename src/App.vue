@@ -1,17 +1,14 @@
 <template>
   <div id="app" class="tudo">
     <TelaInicial class="tela-inicial"/>
-    <Rodape class="meu-rodape"/>
   </div>
 </template>
 <script>
 import TelaInicial from './components/tela_inicial/tela_inicial.vue'
-import Rodape from './components/rodape/rodape.vue'
 export default {
   name: 'App',
   components: {
-    TelaInicial,
-    Rodape
+    TelaInicial
   }
 }
 </script>
@@ -37,13 +34,6 @@ export default {
     top: 0px;
   }
 
-  .meu-rodape{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-  }  
-
   .cabecalho-conteudo{
     padding: 0px;
     margin: 0px;
@@ -51,13 +41,19 @@ export default {
     text-align: center;
   }
 
-  .tabela{
+  .minha-tabela{
     border: solid;
     border-radius: 10px;
     padding: 2px;
     letter-spacing: 3px;
     font-family: "Aldrich";
-    
+    width: fit-content;
+  }
+
+  .tabela{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
   }
 
   .tabela table tr th{
