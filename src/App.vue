@@ -45,8 +45,8 @@ export default {
     border: solid;
     border-radius: 10px;
     padding: 2px;
-    letter-spacing: 3px;
-    font-family: "Aldrich";
+    letter-spacing: 2px;
+    font-family: "Arial";
     width: fit-content;
   }
 
@@ -86,12 +86,14 @@ export default {
   }
 
   .formulario-inativo{
-    border: solid black;
+    border:ridge;
+    border-width: 7px;
     padding: 10px;
     border-radius: 5px;
     font-family: "Aldrich";
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-top: 2%;
+    margin-right: 20%;
+    margin-left: 20%;
   }
 
   .formulario-inativo label{
@@ -107,8 +109,18 @@ export default {
     border: solid black;
     height: 25px;
     border-radius: 5px;
-    font-family: "Aldrich";
+    font-family: "Arial";
     font-size: medium;
     width: 25%;
+  }
+
+  .formulario-inativo textarea{
+    padding: 8px;
+    border: solid black;
+    border-radius: 5px;
+    font-family: "Arial";
+    font-size: medium;
+    color: #240090;
+    letter-spacing: 2px;
   }
 </style>

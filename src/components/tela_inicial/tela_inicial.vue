@@ -37,17 +37,23 @@ export default {
         height: 100%;
     }
 
+    .meu-menu{
+        flex-basis: 1;
+    }
+
     .painel{
         background-color: grey;
         width: 100%;
         padding: 0px;
+        flex-basis: 1;
     }
 
     .view{
         background-color: white;
         height: 100%;
-        margin: 2px;        
+        margin: 20px 50px 0px 50px;        
         border-radius: 10px;
+        border-style:inset;
         padding: 15px;
         display: flex;
         flex-flow: column;
